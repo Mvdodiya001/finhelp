@@ -20,7 +20,7 @@
 
 ---
 
-## 📖 What is FinHelp?
+##  What is FinHelp?
 
 **FinHelp** acts as your personal, automated quantitative analyst. It combines two fundamentally different analytical approaches into a single **Fusion Signal**:
 
@@ -34,22 +34,22 @@ These two signals are fused together with a probabilistic weighting system to pr
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Description | Why We Built It |
 | :--- | :--- | :--- |
-| 🤖 **ML Ensemble Engine** | Combines Random Forest, Gradient Boosting, and LSTM into a single weighted ensemble | To capture both non-linear market patterns and sequential time-series dependencies that no single model can |
-| 🧠 **Local LLM Sentiment** | Scrapes live news and runs it through a local `llama.cpp` Gemma model | Zero data leaks to third-party APIs. Your financial queries stay completely private on your hardware |
-| ⚡ **Signal Fusion** | Probabilistically merges ML confidence score with LLM sentiment score | Pure math misses news shocks; pure sentiment ignores technical resistance. The fusion creates a holistic, defensible signal |
-| 📈 **Paper Trading Portfolio** | Simulated ledger with live Unrealized PNL, average cost tracking, and transaction history | Test every signal with zero financial risk under real-time market conditions |
-| 🔁 **Historical Backtesting** | Vectorized simulation engine over 1–5 years of data | Mathematically proves whether the AI strategy beats a "Buy & Hold" benchmark, with full trade-by-trade CSV export |
-| 🕯️ **Candlestick Charting** | Interactive candlestick and volume charts across 6 time periods | Bloomberg-terminal-grade technical analysis visualization |
-| 📊 **Watchlist Comparison** | Run the full analysis pipeline on multiple tickers simultaneously | Identify the strongest opportunity across a portfolio with a single click |
-| 🔐 **JWT Authentication** | Secure user registration and login, with per-user isolated portfolios | Production-grade auth to ensure every user's trading data is completely private and isolated |
+|  **ML Ensemble Engine** | Combines Random Forest, Gradient Boosting, and LSTM into a single weighted ensemble | To capture both non-linear market patterns and sequential time-series dependencies that no single model can |
+|  **Local LLM Sentiment** | Scrapes live news and runs it through a local `llama.cpp` Gemma model | Zero data leaks to third-party APIs. Your financial queries stay completely private on your hardware |
+|  **Signal Fusion** | Probabilistically merges ML confidence score with LLM sentiment score | Pure math misses news shocks; pure sentiment ignores technical resistance. The fusion creates a holistic, defensible signal |
+|  **Paper Trading Portfolio** | Simulated ledger with live Unrealized PNL, average cost tracking, and transaction history | Test every signal with zero financial risk under real-time market conditions |
+|  **Historical Backtesting** | Vectorized simulation engine over 1–5 years of data | Mathematically proves whether the AI strategy beats a "Buy & Hold" benchmark, with full trade-by-trade CSV export |
+|  **Candlestick Charting** | Interactive candlestick and volume charts across 6 time periods | Bloomberg-terminal-grade technical analysis visualization |
+|  **Watchlist Comparison** | Run the full analysis pipeline on multiple tickers simultaneously | Identify the strongest opportunity across a portfolio with a single click |
+|  **JWT Authentication** | Secure user registration and login, with per-user isolated portfolios | Production-grade auth to ensure every user's trading data is completely private and isolated |
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### High-Level Data Flow
 
@@ -178,7 +178,7 @@ erDiagram
 
 ---
 
-## 📂 Directory Structure
+##  Directory Structure
 
 ```text
 finhelp/
@@ -278,7 +278,7 @@ finhelp/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - [Docker](https://docs.docker.com/get-docker/) and Docker Compose
@@ -336,7 +336,7 @@ LLM_MODEL_PATH=/path/to/your/model.gguf
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -371,7 +371,7 @@ LLM_MODEL_PATH=/path/to/your/model.gguf
 
 ---
 
-## 🧠 Core Logic Deep Dive
+##  Core Logic Deep Dive
 
 ### 1. Feature Engineering Pipeline
 Raw OHLCV data from `yfinance` is passed through a feature engineering pipeline that computes:
@@ -400,7 +400,7 @@ The weights (`quant_weight` + `sentiment_weight` = 1.0) are configurable. The fi
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Backend — Pytest unit tests (ML models, API endpoints, caching)
